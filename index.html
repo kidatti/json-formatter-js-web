@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>JSON</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="json.js"></script>
+</head>
+
+<body>
+<div>
+    <input type="button" onclick="json()" value="JSON整形">
+</div>
+<div class="flex">
+    <p>
+        <textarea id="src"></textarea>
+    </p>
+    <p>
+        <textarea id="dst"></textarea>
+    </p>
+    <p>
+        <span id="log"></span>
+    </p>
+</div>
+
+<style>
+    .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex > *{
+        padding: 10px;
+        min-width: 50%;
+        text-align: center;
+    }
+    .flex,
+    .flex > *{
+        border: 0px solid #aaa;
+    }
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+</style>
+</body>
+</html>
